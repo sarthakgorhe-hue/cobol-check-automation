@@ -23,3 +23,4 @@ zowe zos-files upload dir-to-uss "$SRC" "/z/$LOWERCASE_USERNAME/cobolcheck" \
 echo "Verifying upload:"
 zowe zos-files list uss-files "/z/$LOWERCASE_USERNAME/cobolcheck"
 zowe zos-files upload file-to-uss "./NUMBERS.JCL" "/z/$LOWERCASE_USERNAME/cobolcheck/NUMBERS.JCL"
+zowe zos-files upload file-to-data-set "./NUMBERS.JCL" "$ZOWE_USERNAME.JCL(NUMBERS)"
